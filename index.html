@@ -55,11 +55,17 @@
             display: flex;
             align-items: center;
             text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: #0000fe;
         }
 
-        .logo img {
-            height: 40px;
-            width: auto;
+        .logo-bold {
+            font-weight: bold;
+        }
+
+        .logo-regular {
+            font-weight: normal;
         }
 
         /* Hide any text fallback */
@@ -935,7 +941,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="logo.png" alt="Base Pay Logo" style="height: 32px; margin-bottom: 16px;">
+                    <div style="font-family: Arial, sans-serif; font-size: 20px; color: #0000fe; margin-bottom: 16px;">
+                        <span style="font-weight: bold;">base</span><span style="font-weight: normal;">pay</span>
+                    </div>
                     <p>The future of passive income on Base Network. Buy Base Pay, earn USDC automatically.</p>
                     <div class="social-links">
                         <a href="#" class="social-link">𝕏</a>
