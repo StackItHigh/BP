@@ -583,17 +583,28 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            /* Header Mobile */
             .nav-links {
                 display: none;
             }
             
+            .header-cta {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            
+            /* Hero Mobile */
             .hero {
-                padding: 80px 0 60px;
+                padding: 60px 0 40px;
             }
             
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 40px;
                 text-align: center;
             }
             
@@ -601,33 +612,168 @@
                 text-align: center;
             }
             
-            .phone-mockup {
-                width: 240px;
-                height: 480px;
+            .hero h1 {
+                font-size: clamp(32px, 8vw, 48px);
+                margin-bottom: 16px;
+            }
+            
+            .hero-subtitle {
+                font-size: 16px;
+                margin-bottom: 24px;
             }
             
             .hero-cta {
                 flex-direction: column;
                 align-items: center;
+                gap: 12px;
+                margin-bottom: 40px;
+            }
+            
+            .btn-primary, .btn-secondary {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
+            }
+            
+            .phone-mockup {
+                width: 200px;
+                height: 400px;
             }
             
             .hero-stats {
                 grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
+                gap: 12px;
+                margin: 40px 0 0 0;
             }
             
+            .stat-item {
+                padding: 16px 8px;
+            }
+            
+            .stat-number {
+                font-size: 24px;
+                margin-bottom: 4px;
+            }
+            
+            .stat-label {
+                font-size: 12px;
+            }
+            
+            /* Sections Mobile */
             .features, .tokenomics, .cta-section {
-                padding: 80px 0;
+                padding: 60px 0;
             }
             
+            .section-title {
+                font-size: clamp(28px, 6vw, 36px);
+                margin-bottom: 12px;
+            }
+            
+            .section-subtitle {
+                font-size: 16px;
+            }
+            
+            /* Features Mobile */
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .feature-card {
+                padding: 24px 20px;
+                text-align: center;
+            }
+            
+            .feature-card h3 {
+                font-size: 18px;
+            }
+            
+            .feature-card p {
+                font-size: 14px;
+            }
+            
+            /* Tokenomics Mobile */
             .tokenomics-content {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 40px;
+                text-align: center;
             }
             
+            .tokenomics-info h2 {
+                font-size: clamp(28px, 6vw, 36px);
+            }
+            
+            .tokenomics-info p {
+                font-size: 16px;
+            }
+            
+            .tokenomics-visual {
+                padding: 24px;
+            }
+            
+            .tax-circle {
+                width: 160px;
+                height: 160px;
+                margin-bottom: 24px;
+            }
+            
+            .tax-percentage {
+                font-size: 36px;
+            }
+            
+            .breakdown-item {
+                padding: 10px 12px;
+            }
+            
+            /* CTA Mobile */
+            .cta-section h2 {
+                font-size: clamp(28px, 6vw, 36px);
+            }
+            
+            .cta-section p {
+                font-size: 16px;
+                margin-bottom: 32px;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+            
+            .btn-white, .btn-outline {
+                width: 100%;
+                max-width: 280px;
+            }
+            
+            /* Footer Mobile */
             .footer-content {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 32px;
+                text-align: center;
+            }
+            
+            .footer-brand {
+                margin-bottom: 16px;
+            }
+            
+            .social-links {
+                justify-content: center;
+            }
+            
+            .footer-section h4 {
+                margin-bottom: 16px;
+            }
+            
+            .footer-section ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 16px;
+            }
+            
+            .footer-section li {
+                margin-bottom: 8px;
             }
         }
     </style>
