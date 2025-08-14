@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base Pay - Buy Base Pay, Earn USDC</title>
-    <meta name="description" content="The revolutionary token on Base Network. Buy Base Pay, earn USDC rewards. Join the future of decentralized finance.">
+    <meta name="description" content="The revolutionary token on Base Network. Buy Base Pay, earn USDC rewards.">
     
     <!-- Open Graph -->
     <meta property="og:title" content="Base Pay - Buy Base Pay, Earn USDC">
-    <meta property="og:description" content="The revolutionary token on Base Network. Buy Base Pay, earn USDC rewards. Join the future of decentralized finance.">
+    <meta property="og:description" content="The revolutionary token on Base Network. Buy Base Pay, earn USDC rewards.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/og-image.png">
     
@@ -58,6 +58,7 @@
             font-family: Arial, sans-serif;
             font-size: 24px;
             color: #0000fe;
+            letter-spacing: 2px;
         }
 
         .logo-bold {
@@ -261,6 +262,18 @@
         .section-header {
             text-align: center;
             margin-bottom: 80px;
+        }
+
+        .usdc-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .usdc-logo img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
         }
 
         .section-title {
@@ -678,6 +691,11 @@
             .section-subtitle {
                 font-size: 16px;
             }
+
+            .usdc-logo img {
+                width: 300px;
+                height: 300px;
+            }
             
             /* Features Mobile */
             .features-grid {
@@ -788,7 +806,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">Base Pay</a>
+                <a href="#" class="logo"><span style="font-weight: bold;">b a s e</span>&nbsp;&nbsp;<span style="font-weight: normal;">p a y</span></a>
                 <ul class="nav-links">
                     <li><a href="#features">Features</a></li>
                     <li><a href="#tokenomics">Tokenomics</a></li>
@@ -846,6 +864,9 @@
         <section id="features" class="features">
             <div class="container">
                 <div class="section-header">
+                    <div class="usdc-logo">
+                        <img src="usdc.png" alt="USDC Logo">
+                    </div>
                     <h2 class="section-title">Built for Billions</h2>
                     <p class="section-subtitle">
                         Simple mechanics, real rewards, and sustainable tokenomics 
